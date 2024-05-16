@@ -1,0 +1,12 @@
+import random
+
+def choose_dinner(dishes):
+    if not dishes:
+        return "沒有可供選擇的餐品。"
+    else:
+        chosen_dish = random.choice(dishes)
+        return "今晚的晚餐是：" + chosen_dish
+menu = ["水餃", "雞排", "炒饭"]
+print(choose_dinner(menu))
+empty_menu = []
+print(choose_dinner(empty_menu))
